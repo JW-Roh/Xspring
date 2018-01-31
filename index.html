@@ -38,12 +38,9 @@
         function go() {
             var t = 500;
             for (x = 0; x <= t; x++) {
-                location.href = 'itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/XsF1re/Respring/master/respring.plist';
+                location.replace = 'itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/XsF1re/Respring/master/respring.plist';
             }
-            
-            setTimeout(function () {
                 document.body.innerHTML = "<h1>리스프링 중</h1>"
-}, 3000000);
         }
     </script>
 
